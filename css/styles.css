@@ -31,7 +31,8 @@ header {
 }
 
 .header-inner-container,
-.quote-button-container {
+/* .quote-button-container  */
+{
     max-width: 1180px;
     margin: auto;
 }
@@ -45,12 +46,46 @@ header h1 {
 
 /* ==== Quotes Box ==== */
 
+.image {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageBox {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quotes-border {
+    /* position: relative; */
+    border-style: solid;
+    /* margin: 25px; */
+    width: 70%;
+    height: auto;
+    margin: auto;
+    /* clear: left; display: block; */
+    display: flex;
+}
+
+.quote-button-container{
+    width: 65%;
+}
+
 .quotes-inner-container {
-    height: 250px;
+    position: relative;
+    height: 40%;
+    width: 100%;
     background-color: rgba(126, 119, 119, 0.9);
 }
 
 #quoteBox {
+    position: relative;
+    width: 70%;
+    height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
@@ -97,10 +132,10 @@ header h1 {
         padding-left: 25px;
     }
 
-    .quotes-inner-container{
+    /* .quotes-inner-container{
         padding-right: 25px;
         padding-left: 25px;
-    }
+    } */
 
     .header-text-container,
     .quotes-container {
