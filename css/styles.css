@@ -1,12 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900|Roboto:100|Rozha+One');
 
 /* Variables */
 
 :root {
     --font-size-large: 40px;
     --font-size-medium: 20px;
-
+    --font-family-Rozha: 'Rozha One', serif;
+    --font-family-Roboto: 'Roboto', sans-serif;
+    --font-family-Raleway: 'Raleway:900', sans-serif;
 }
 
 /* Main */
@@ -44,13 +46,32 @@ header h1 {
     margin-top: 35px;
 }
 
+
+
 /* ==== Quotes Box ==== */
 
 .image {
-    width: 20%;
+    position: relative;
+    height: auto; 
+    width: auto; 
+    max-width: 250px; 
+    max-height: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px;
+}
+
+div > img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* min-height: 100%;
+    min-width: 100%; */
+    transform: translate(-50%, -50%);
 }
 
 .imageBox {
@@ -58,6 +79,12 @@ header h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 5%;
+}
+
+.quotes-container {
+    position: relative;
+    width: 100%;
 }
 
 .quotes-border {
@@ -65,7 +92,7 @@ header h1 {
     border-style: solid;
     /* margin: 25px; */
     width: 70%;
-    height: auto;
+    height: 150px;
     margin: auto;
     /* clear: left; display: block; */
     display: flex;
@@ -79,12 +106,13 @@ header h1 {
     position: relative;
     height: 40%;
     width: 100%;
-    background-color: rgba(126, 119, 119, 0.9);
+    background-color: rgba(216, 215, 215, 0.9);
+    display: flex;
 }
 
 #quoteBox {
     position: relative;
-    width: 70%;
+    width: auto;
     height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -92,25 +120,53 @@ header h1 {
     padding-right: 15px;
     font-size: var(--font-size-medium);
     color: white;
+    
+}
+
+.buttonDiv {
+    background-color: rgba(182, 182, 182, 0.9);
 }
 
 .button {
-    /* display: inline-block; */
-    border-radius: 4px;
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     outline: none;
     border: none;
-    color: rgb(255, 255, 103);
+    vertical-align: center;
     font-size: 10px;
+    font-family: var(--font-family-Raleway);
     padding-left: 30px;
-    /* padding: 20px; */
-    /* width: 70px; */
-    /* height: 10px; */
-    transition: all 0.5s;
     cursor: pointer;
-    /* margin: 5px; */
-    float: left;
+    text-transform: capitalize;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 10px;
+}
+
+.year {
+    font-style: italic;
+}
+
+.citation, .link{
+    font-size: 10px;
+}
+
+.quote {
+    font-family: var(--font-family-Rozha);
+    font-size: 30px;
+    color: rgb(68, 100, 158)
+}
+
+.citation, .pSY, .link {
+    text-align: right;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: red;
 }
 
 
@@ -140,10 +196,6 @@ header h1 {
     .header-text-container,
     .quotes-container {
         text-align: left;
-    }
-
-    .search-container {
-        margin-top: 25px;
     }
 
     .modal {
