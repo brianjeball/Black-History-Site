@@ -1,0 +1,20 @@
+{
+  "name": "Black-History-Site",
+  "version": "1.0.0",
+  "description": "# Built to share Black History",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianjeball/Black-History-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianjeball/Black-History-Site/issues"
+  },
+  "homepage": "https://github.com/brianjeball/Black-History-Site#readme"
+}
