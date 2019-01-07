@@ -64,6 +64,13 @@ function getRandomQuote() {
 $('#loadQuote').on('click', function(){
     let actualQuote = getRandomQuote(quotes);
 
+    if(!actualQuote.link){
+        $('.link').hide();
+    } else {
+        $('.link').show();
+        $('.link a').attr('href', `${actualQuote.link}`)
+    }
+
     $('.quote').text(`${actualQuote.quote}`);
     $('.source').text(`${actualQuote.source}`)
     $('.year').text(`${actualQuote.year}`)
@@ -74,13 +81,6 @@ $('#loadQuote').on('click', function(){
     } else {
         $('.citation').show();
         $('.citation').text(`${actualQuote.citation}`)
-    }
-
-    if(!actualQuote.link){
-        $('.link').hide();
-    } else {
-        $('.link').show();
-        $('.link a').attr('href', `${actualQuote.link}`)
     }
 
 
