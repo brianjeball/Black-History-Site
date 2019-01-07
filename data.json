@@ -1,0 +1,51 @@
+{
+    "data": {
+        "quotes": [
+            {
+                "id": 0,
+                "quote": "Project 1",
+                "source": "Barry Jenkins",
+                "year": 2018,
+                "citation": "",
+                "link": "",
+                "image_urls": "images/barry.jpeg"
+            },
+            {
+                "id": 1,
+                "quote": "Project 1",
+                "source": "Donald Glover",
+                "year": 2018,
+                "citation": "",
+                "link": "",
+                "image_urls": "images/donald.jpeg"
+            },
+            {
+                "id": 2,
+                "quote": "Ava DuVernay",
+                "source": "Ava DuVernay",
+                "year": 2018,
+                "citation": "",
+                "link": "",
+                "image_urls": "images/ava.jpeg"
+            },
+            {
+                "id": 3,
+                "quote": "",
+                "source": "Lena Wraithe",
+                "year": 2018,
+                "citation": "",
+                "link": "",
+                "image_urls": "images/lena.jpeg"
+            },
+            {
+                "id": 4,
+                "quote": "",
+                "source": "Viola Davis",
+                "year": 2018,
+                "citation": "",
+                "link": "",
+                "image_urls": "images/viola.jpeg"
+            }
+        ]
+    }
+}
